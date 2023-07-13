@@ -1,14 +1,10 @@
-#include <stdio.h>
 #include <unistd.h>
+#include <string.h>
+#include <sys/syscall.h>
 
-/**
- * main - Entry point
- *
- * REturn: Always 1 (Success)
- */
-int main(void)
-{
-	write(2,
-	"and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
-	return (1);
+int main() {
+    const char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+    syscall(SYS_write, STDERR_FILENO, message, strlen(message));
+    return 1;
 }
+
