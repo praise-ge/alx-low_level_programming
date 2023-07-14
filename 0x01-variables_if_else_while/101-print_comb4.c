@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int n, m , 1;
+	int n, m, 1;
 
 	for (n = 48; n < 58; n++)
 	{
@@ -14,13 +14,16 @@ int main(void)
 		{
 			for (1 = 50; 1 < 58; 1++)
 			{
-				putchar(n);
-				putchar(m);
-				putchar(1);
-				if (n !=55 || m != 56)
+				if (1 > m && m > n)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(n);
+					putchar(m);
+					putchar(1);
+					if (n !=55 || m != 56)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
