@@ -40,21 +40,20 @@ int _strlen(char *s)
 }
 
 /**
- *  * errors - handles errors for main
- *   */
+ * errors - handles errors for main
+ */
 void errors(void)
 {
-		printf("Error\n");
-			exit(98);
+	printf("Error\n");
+	exit(98);
 }
 
 /**
- *  * main - multiplies two positive numbers
- *   * @argc: number of arguments
- *    * @argv: array of arguments
- *     *
- *      * Return: always 0 (Success)
- *       */
+ * main - multiplies two positive numbers
+ * @argc: number of arguments
+ * @argv: array of arguments
+ * Return: always 0 (Success)
+ */
 int main(int argc, char *argv[])
 {
 	char *s1, *s2;
